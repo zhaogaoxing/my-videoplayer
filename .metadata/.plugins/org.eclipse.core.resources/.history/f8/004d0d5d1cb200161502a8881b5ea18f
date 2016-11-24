@@ -1,0 +1,167 @@
+package
+{
+	import flash.display.Sprite;
+	import flash.events.*;
+	import flash.events.NetStatusEvent;
+	import flash.media.Video;
+	import flash.net.NetConnection;
+	import flash.net.NetStream;
+	import flash.text.TextField;
+	import flash.text.TextFormat;
+	import flash.utils.Timer;
+	
+	import org.osmf.events.TimeEvent;
+	
+	public class videoplay extends Sprite
+	{
+		protected var video:Video;
+		protected var nc:NetConnection;
+		protected var ns:NetStream;
+		protected var nsDuration:Number;
+		protected var playPauseButton:TestButton;
+		protected var progressTF:TextField;
+		protected var progressTimer:Timer;
+		public function videoplay()
+		{
+			video = new Video(224,168);
+			video.x = video.y = 10;
+			addChild(video);
+			
+			nc = new NetConnection();
+			nc.connect(null);
+			
+			ns = new NetStream(nc);
+			ns.client = 
+				{
+					onCuePoint:onCuePoint,
+					onMeteData:onMeteData,
+					onXMPData:onXMPData,
+					onPlayStatus:onPlayStatus
+				}
+			ns.addEventListener(NetStatusEvent.NET_STATUS,onNetStatus);
+			
+			video.attachNetStream(ns);
+			ns.play("http://actionscriptbible.com/files/fire.flv");
+			
+			playPauseButton = new TestButton(24,24,"||");
+			playPauseButton.x = 10;
+			playPauseButton.y = 180;
+			playPauseButton.addEventListener(MouseEvent.CLICK,onPlayPauseClicked);
+			addChild(playPauseButton);
+			
+			var rwButton:TestButton = new TestButton(24,24,"<<");
+			rwButton.x = 39;
+			rwButton.y = playPauseButton.y;
+			rwButton.addEventListener(MouseEvent.CLICK,onBackClicked);
+			addChild(rwButton);
+			
+			var fwButton:TestButton =new TestButton(24,24,"||");
+			fwButton.x = 68;
+			fwButton.y = playPauseButton.y;
+			fwButton.addEventListener(MouseEvent.CLICK,onForwardClicked);
+			addChild(fwButton);
+			
+			progressTF = new TextField();
+			progressTF.height = 24;
+			progressTF.width = 140;
+			progressTF.x = 97;
+			progressTF.y = playPauseButton.y+4;
+			progressTF.defaultTextFormat = new TextFormat("_sans",11,0,false,false,false,null,null,"center");
+			progressTF.selectable = false;
+			addChild(progressTF);
+			
+			progressTimer = new Timer(100);
+			progressTimer.addEventListener(TimerEvent.TIMER,onUPdateProgress);
+			progressTimer.start();
+			
+			var fsButton:TestButton = new TestButton(82,24,"fullscreen");
+			fsButton.x = playPauseButton.x;
+			fsButton.y = playPauseButton.y+29;
+			fsButton.addEventListener(MouseEvent.CLICK,onFullScreenClicked);
+			addChild(fsButton);
+		}
+		protected function onNetStatus(e:NetStatusEvent):void
+		{
+			switch(e.info.code)
+			{
+				case "NetStream.Play.Stop":
+					ns.seek(0);
+					ns.pause();
+					playPauseButton.label.text = ">";
+					break;
+			}
+		}
+		protected function onPlayStatus(e:Object):void
+		{
+			trace(e);
+		}
+		protected function onCuePoint(cuePointEvent:Object):void
+		{
+			progressTF.text = "[cue point]" + cuePointEvent.name;
+			progressTimer.delay = 750;
+		}
+		protected function onXMPData(data:Object):void
+		{
+			
+		}
+		protected function onMeteData(obj:Object):void
+		{
+			nsDuration = obj.duration;
+		}
+		protected function onUpdateProgress(e:TimeEvent = null):void
+		{
+			progressTF.text = ns.time.toFixed(1)+"s/"+nsDuration.toFixed(1)+"s";
+			progressTimer.delay = 100;
+		}
+		protected function onBackClicked(e:MouseEvent):void
+		{
+			var seekTime:Number = ns.time - 1;
+			seekTime = Math.max(0,seekTime);
+			ns.seek(seekTime);
+			onUpdateProgress();
+		}
+		protected function onForwardClicked(e:MouseEvent):void
+		{
+			var seekTime:Number = ns.time +1;
+			seekTime = Math.min(seekTime,nsDuration);
+		}
+	}
+}
+import flash.display.Sprite;
+import flash.text.TextField;
+import flash.text.TextFormat;
+
+class TestButton extends Sprite
+{
+	public var label:TextField;
+	public function TestButton(w:Number,h:Number,labelText:String)
+	{
+		graphics.lineStyle(0.5,0,0,true);
+		graphics.beginFill(0xa0a0a0);
+		graphics.drawRoundRect(0,0,w,h,8);
+		label = new TextField();
+		label.defaultTextFormat = new TextFormat("_sans",11,0,true,false,false,null,null,"center");
+		label.width = w;
+		label.height = h;
+		label.text = labelText;
+		label.y = (h - label.textHeight)/2-2;
+		buttonMode = true;
+		mouseChildren = false;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

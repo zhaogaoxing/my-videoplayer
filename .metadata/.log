@@ -1,0 +1,450 @@
+!SESSION 2016-11-24 15:13:25.233 -----------------------------------------------
+eclipse.buildId=I20100608-0911
+java.version=1.6.0_16
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=zh_CN
+Command-line arguments:  -os win32 -ws win32 -arch x86 -data Z:\flashlearn\videoplay
+
+!ENTRY org.eclipse.ui 2 0 2016-11-24 15:13:39.238
+!MESSAGE Warnings while parsing the commands from the 'org.eclipse.ui.commands' and 'org.eclipse.ui.actionDefinitions' extension points.
+!SUBENTRY 1 org.eclipse.ui 2 0 2016-11-24 15:13:39.238
+!MESSAGE Commands should really have a category: plug-in='com.qnx.flashbuilder.multiplatform.qnx.ui', id='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.OpenInfoCenter', categoryId='com.qnx.flashbuilder.multiplatform.qnx.ui.commands.category.help'
+
+!ENTRY org.eclipse.ui 4 0 2016-11-24 15:35:25.753
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.buildActionScriptProposals(ActionScriptCompletionProcessor.java:1594)
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.computeCompletionProposals(ActionScriptCompletionProcessor.java:1432)
+	at com.adobe.flexide.editorcore.contentassist.AbstractCachingCompletionProcessor.hasCompletionProposals(AbstractCachingCompletionProcessor.java:72)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.willHaveProposals(FlexContentAssistDelegate.java:351)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.canRequery(FlexContentAssistDelegate.java:469)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.getContextInformation(FlexContentAssistDelegate.java:223)
+	at com.adobe.flexide.editorcore.contentassist.FlexCompletionProposal.getContextInformation(FlexCompletionProposal.java:160)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:944)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:881)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.verifyKey(CompletionProposalPopup.java:1307)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:807)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:491)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:65)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5635)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.ui 4 0 2016-11-24 15:38:06.158
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.buildActionScriptProposals(ActionScriptCompletionProcessor.java:1594)
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.computeCompletionProposals(ActionScriptCompletionProcessor.java:1432)
+	at com.adobe.flexide.editorcore.contentassist.AbstractCachingCompletionProcessor.hasCompletionProposals(AbstractCachingCompletionProcessor.java:72)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.willHaveProposals(FlexContentAssistDelegate.java:351)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.canRequery(FlexContentAssistDelegate.java:469)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.getContextInformation(FlexContentAssistDelegate.java:223)
+	at com.adobe.flexide.editorcore.contentassist.FlexCompletionProposal.getContextInformation(FlexCompletionProposal.java:160)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:944)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:881)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.verifyKey(CompletionProposalPopup.java:1307)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:807)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:491)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:65)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5635)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.ui 4 0 2016-11-24 15:39:53.609
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.buildActionScriptProposals(ActionScriptCompletionProcessor.java:1594)
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.computeCompletionProposals(ActionScriptCompletionProcessor.java:1432)
+	at com.adobe.flexide.editorcore.contentassist.AbstractCachingCompletionProcessor.hasCompletionProposals(AbstractCachingCompletionProcessor.java:72)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.willHaveProposals(FlexContentAssistDelegate.java:351)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.canRequery(FlexContentAssistDelegate.java:469)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.getContextInformation(FlexContentAssistDelegate.java:223)
+	at com.adobe.flexide.editorcore.contentassist.FlexCompletionProposal.getContextInformation(FlexCompletionProposal.java:160)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:944)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:881)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.verifyKey(CompletionProposalPopup.java:1307)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:807)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:491)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:65)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5635)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY org.eclipse.ui 4 0 2016-11-24 15:48:14.836
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.buildActionScriptProposals(ActionScriptCompletionProcessor.java:1594)
+	at com.adobe.flexide.as.core.contentassist.ActionScriptCompletionProcessor.computeCompletionProposals(ActionScriptCompletionProcessor.java:1432)
+	at com.adobe.flexide.editorcore.contentassist.AbstractCachingCompletionProcessor.hasCompletionProposals(AbstractCachingCompletionProcessor.java:72)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.willHaveProposals(FlexContentAssistDelegate.java:351)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.canRequery(FlexContentAssistDelegate.java:469)
+	at com.adobe.flexide.editorcore.contentassist.FlexContentAssistDelegate.getContextInformation(FlexContentAssistDelegate.java:223)
+	at com.adobe.flexide.editorcore.contentassist.FlexCompletionProposal.getContextInformation(FlexCompletionProposal.java:160)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertProposal(CompletionProposalPopup.java:944)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.insertSelectedProposalWithMask(CompletionProposalPopup.java:881)
+	at org.eclipse.jface.text.contentassist.CompletionProposalPopup.verifyKey(CompletionProposalPopup.java:1307)
+	at org.eclipse.jface.text.contentassist.ContentAssistant$InternalListener.verifyKey(ContentAssistant.java:807)
+	at org.eclipse.jface.text.TextViewer$VerifyKeyListenersManager.verifyKey(TextViewer.java:491)
+	at org.eclipse.swt.custom.StyledTextListener.handleEvent(StyledTextListener.java:65)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:774)
+	at org.eclipse.swt.custom.StyledText.handleKeyDown(StyledText.java:5936)
+	at org.eclipse.swt.custom.StyledText$7.handleEvent(StyledText.java:5635)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1053)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1077)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1062)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1104)
+	at org.eclipse.swt.widgets.Widget.sendKeyEvent(Widget.java:1100)
+	at org.eclipse.swt.widgets.Widget.wmChar(Widget.java:1509)
+	at org.eclipse.swt.widgets.Control.WM_CHAR(Control.java:4640)
+	at org.eclipse.swt.widgets.Canvas.WM_CHAR(Canvas.java:345)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:4528)
+	at org.eclipse.swt.widgets.Canvas.windowProc(Canvas.java:341)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4972)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessageW(Native Method)
+	at org.eclipse.swt.internal.win32.OS.DispatchMessage(OS.java:2530)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3752)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:2696)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:2660)
+	at org.eclipse.ui.internal.Workbench.access$4(Workbench.java:2494)
+	at org.eclipse.ui.internal.Workbench$7.run(Workbench.java:674)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:667)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at com.adobe.flexbuilder.standalone.FlashBuilderApplication.start(FlashBuilderApplication.java:108)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:110)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:79)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:344)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:179)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:622)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:577)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1410)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:09:50.544
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:10:45.609
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:11:36.381
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:14:34.999
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:14:58.419
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY org.eclipse.jface 2 0 2016-11-24 16:17:14.478
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-24 16:17:14.478
+!MESSAGE A conflict occurred for CTRL+G:
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@174cd73)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.declarations.in.workspace,在工作空间中查找所有声明,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllDeclarationsAction@174cd73)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.declarations.in.workspace,工作空间中的声明,
+		在工作空间中搜索对所选元素的声明,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2016-11-24 16:17:14.478
+!MESSAGE A conflict occurred for CTRL+SHIFT+G:
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@15c3aca)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexide.editorcore.flexEditorScope,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(com.adobe.flexbuilder.as.editor.find.all.references.in.workspace,在工作空间中查找所有引用,
+		,
+		Category(com.adobe.flexbuilder.editorcore.navigation.category,导航,null,true),
+		LegacyHandlerWrapper(ActionHandler(action=com.adobe.flexbuilder.as.editor.ui.actions.FindAllReferencesAction@15c3aca)),
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	com.adobe.flexbuilder.as.editor.context.packageexplorer,,,system)
+Binding(CTRL+SHIFT+G,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.search.references.in.workspace,工作空间中的引用,
+		在工作空间中搜索对所选元素的引用,
+		Category(org.eclipse.search.ui.category.search,搜索,搜索命令类别,true),
+		,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:23:21.381
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:25:50.974
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+
+!ENTRY com.adobe.flexbuilder.project 4 43 2016-11-24 16:28:12.911
+!MESSAGE Illegal character in opaque part at index 2: Z:\flashlearn\videoplay\videoplay\bin-debug\videoplay-app.xml
+!STACK 0
+java.lang.Exception
+	at com.adobe.flexbuilder.project.internal.FlexProjectCore.createErrorStatus(FlexProjectCore.java:1019)
+	at com.adobe.flexbuilder.util.logging.GlobalLogImpl.log(GlobalLogImpl.java:66)
+	at com.adobe.flexbuilder.util.logging.GlobalLog.log(GlobalLog.java:52)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.modifyAppXMLforANEPackaging(ADLLaunchHandler.java:260)
+	at com.adobe.flexide.launching.air.ADLLaunchHandler.launch(ADLLaunchHandler.java:152)
+	at com.adobe.flexide.launching.AbstractFdbLaunchDelegate.launch(AbstractFdbLaunchDelegate.java:67)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:244)
+	at com.adobe.flexide.launching.AbstractFlexLaunchDelegate.launch(AbstractFlexLaunchDelegate.java:134)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:854)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:703)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:928)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$8.run(DebugUIPlugin.java:1132)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
